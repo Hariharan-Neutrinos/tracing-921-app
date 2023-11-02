@@ -1,0 +1,13 @@
+{
+    "displayName": "tracing-921-app",
+    "appName": "tracing-921-app",
+    "description": " ",
+    "lastModified": "2023-11-02T11:38:00.821Z",
+    "imgSourcePath": "",
+    "version": "1.0.0",
+    "appType": "apiOnly",
+    "templateName": "blank",
+    "createDate": "2023-11-02T11:37:59.705Z",
+    "analyticsId": "456e94e0-6685-1410-ea24-5682ccdb4d7c",
+    "createdStudioVersion": "9.2.1"
+}

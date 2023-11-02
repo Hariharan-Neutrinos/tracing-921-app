@@ -1,0 +1,312 @@
+[
+    {
+        "id": "SSD_SERVICE_ID_sd_CDA0Tw4XFl1VNXlI",
+        "type": "tab",
+        "createdDate": "2023-11-02T11:38:13.834Z",
+        "label": "wea",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "wea",
+        "relativeParentPath": ""
+    },
+    {
+        "id": "sd_13h8m67CkhCT0XGj",
+        "type": "HttpIn",
+        "z": "SSD_SERVICE_ID_sd_CDA0Tw4XFl1VNXlI",
+        "viewType": "server",
+        "nodeType": "start",
+        "name": "",
+        "path": "ping",
+        "uploadpath": "",
+        "summary": "",
+        "description": "",
+        "method": "get",
+        "sequenceId": "",
+        "consumes": "",
+        "produces": "",
+        "filetype": "path",
+        "acceptFileUpload": false,
+        "useDataModel": false,
+        "dataModelIsArray": false,
+        "uploadFileOptions": "",
+        "erd": "",
+        "erdName": "",
+        "entity": "",
+        "entityId": "",
+        "ref": "",
+        "editableListData": {
+            "responses": [],
+            "params": [],
+            "produces": [],
+            "consumes": []
+        },
+        "inputs": 0,
+        "outputs": 1,
+        "validateRequestUsingSwaggerDocs": false,
+        "category": "HTTP",
+        "x": 225,
+        "y": 140,
+        "wires": [
+            [
+                "sd_6ISYx2fLqfM2lG2v"
+            ]
+        ],
+        "__ssdTypeInputs__": {
+            "uploadpath": {
+                "type": "str",
+                "value": "",
+                "nullable": "true",
+                "nullableValue": "",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "wea",
+        "functionName": "sd_13h8m67CkhCT0XGj"
+    },
+    {
+        "id": "sd_6ISYx2fLqfM2lG2v",
+        "type": "HttpOut",
+        "z": "SSD_SERVICE_ID_sd_CDA0Tw4XFl1VNXlI",
+        "viewType": "server",
+        "nodeType": "flow",
+        "name": "",
+        "headers": {},
+        "responseBody": {
+            "type": "literal",
+            "value": "\"Tracing works\"",
+            "ssd_typedInputField": true
+        },
+        "httpcode": {
+            "type": "num",
+            "value": 200,
+            "ssd_typedInputField": true
+        },
+        "responseType": "obj",
+        "swaggerResponse": {},
+        "responseMapping": {
+            "status": 200,
+            "obj": "\"Tracing works\"",
+            "send": "\"Tracing works\""
+        },
+        "dataModelIsArray": false,
+        "cookies": [],
+        "inputs": 1,
+        "outputs": 0,
+        "erd": "",
+        "entity": "",
+        "entityId": "",
+        "ref": "",
+        "editableListData": {
+            "headers": [],
+            "produces": [],
+            "responses": []
+        },
+        "cookiesList": {},
+        "switchStates": {
+            "headers": "Map",
+            "cookies": "Map"
+        },
+        "functionName": "sd_6ISYx2fLqfM2lG2v",
+        "category": "HTTP",
+        "x": 465,
+        "y": 100,
+        "wires": [],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "wea",
+        "generated": true
+    },
+    {
+        "id": "sd_Y3QhkrqCol56DLt7",
+        "type": "HttpIn",
+        "z": "SSD_SERVICE_ID_sd_CDA0Tw4XFl1VNXlI",
+        "viewType": "server",
+        "nodeType": "start",
+        "name": "",
+        "path": "test",
+        "uploadpath": "",
+        "summary": "",
+        "description": "",
+        "method": "get",
+        "sequenceId": "",
+        "consumes": "",
+        "produces": "",
+        "filetype": "path",
+        "acceptFileUpload": false,
+        "useDataModel": false,
+        "dataModelIsArray": false,
+        "uploadFileOptions": "",
+        "erd": "",
+        "erdName": "",
+        "entity": "",
+        "entityId": "",
+        "ref": "",
+        "editableListData": {
+            "responses": [],
+            "params": [],
+            "produces": [],
+            "consumes": []
+        },
+        "inputs": 0,
+        "outputs": 1,
+        "validateRequestUsingSwaggerDocs": false,
+        "category": "HTTP",
+        "x": 170,
+        "y": 280,
+        "wires": [
+            [
+                "sd_c0iLbLFBuaUvIW8f"
+            ]
+        ],
+        "__ssdTypeInputs__": {
+            "uploadpath": {
+                "type": "str",
+                "value": "",
+                "nullable": "true",
+                "nullableValue": "",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "wea",
+        "functionName": "sd_Y3QhkrqCol56DLt7"
+    },
+    {
+        "id": "sd_Yhx3EY39AQwNqHAP",
+        "type": "HttpOut",
+        "z": "SSD_SERVICE_ID_sd_CDA0Tw4XFl1VNXlI",
+        "viewType": "server",
+        "nodeType": "flow",
+        "name": "",
+        "headers": {},
+        "responseBody": {
+            "type": "bh",
+            "value": "result",
+            "ssd_typedInputField": true
+        },
+        "httpcode": {
+            "type": "num",
+            "value": 200,
+            "ssd_typedInputField": true
+        },
+        "responseType": "obj",
+        "swaggerResponse": {},
+        "responseMapping": {
+            "status": 200,
+            "obj": "bh.result",
+            "send": "bh.result"
+        },
+        "dataModelIsArray": false,
+        "cookies": [],
+        "inputs": 1,
+        "outputs": 0,
+        "erd": "",
+        "entity": "",
+        "entityId": "",
+        "ref": "",
+        "editableListData": {
+            "headers": [],
+            "produces": [],
+            "responses": []
+        },
+        "cookiesList": {},
+        "switchStates": {
+            "headers": "Map",
+            "cookies": "Map"
+        },
+        "functionName": "sd_Yhx3EY39AQwNqHAP",
+        "category": "HTTP",
+        "x": 430,
+        "y": 280,
+        "wires": [],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "wea",
+        "generated": true
+    },
+    {
+        "id": "sd_c0iLbLFBuaUvIW8f",
+        "type": "ServerHttpRequest",
+        "z": "SSD_SERVICE_ID_sd_CDA0Tw4XFl1VNXlI",
+        "viewType": "server",
+        "nodeType": "flow",
+        "name": "",
+        "method": "get",
+        "methodMapping": "",
+        "methodMappingObj": {},
+        "urlMapping": "'https://alexwohlbruck.github.io/cat-facts/'",
+        "urlMappingObj": {
+            "mapVarType": "literal",
+            "mapVarValue": "'https://alexwohlbruck.github.io/cat-facts/'"
+        },
+        "ret": "text",
+        "retMapping": "",
+        "retMappingObj": {},
+        "reqBody": "",
+        "reqBodyObj": {
+            "mapVarType": "bh",
+            "mapVarValue": ""
+        },
+        "resultMapping": "bh.result",
+        "resultMappingObj": {
+            "mapVarType": "bh",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMapping": "",
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMapping": "",
+        "paramMappingObj": {},
+        "authType": "",
+        "useAuthTypeMappingObj": {},
+        "useAuthTypeMap": {},
+        "useAuthType": "",
+        "useAuthUsername": "",
+        "useAuthUsernameMappingObj": "",
+        "useAuthPassword": "",
+        "useAuthPasswordMappingObj": "",
+        "useAuthToken": "",
+        "useAuthTokenMappingObj": "",
+        "useQueryString": false,
+        "tls": "",
+        "followRedirect": true,
+        "paytoqs": false,
+        "useAuthentication": false,
+        "rejectUnauthorized": false,
+        "proxy": "",
+        "useProxy": false,
+        "usetls": false,
+        "cookies": [],
+        "cookiesMapObj": {},
+        "cookiesList": {},
+        "switchStates": {
+            "cookies": "Map"
+        },
+        "editableListData": {},
+        "timeout": {
+            "type": "num",
+            "value": ""
+        },
+        "functionName": "sd_c0iLbLFBuaUvIW8f",
+        "category": "HTTP",
+        "x": 305,
+        "y": 280,
+        "wires": [
+            [
+                "sd_Yhx3EY39AQwNqHAP"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "wea",
+        "generated": true
+    }
+]

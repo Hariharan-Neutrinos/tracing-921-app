@@ -1,0 +1,28 @@
+{
+    "/ping": {
+        "get": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "wea"
+            ]
+        }
+    },
+    "/test": {
+        "get": {
+            "summary": "",
+            "description": "",
+            "consumes": [],
+            "produces": [],
+            "parameters": [],
+            "responses": {},
+            "tags": [
+                "wea"
+            ]
+        }
+    }
+}
