@@ -1,3 +1,4 @@
+// @ts-check
 const { getNodeAutoInstrumentations } = require('@opentelemetry/auto-instrumentations-node');
 const { OTLPTraceExporter } = require('@opentelemetry/exporter-trace-otlp-grpc');
 const { registerInstrumentations } = require('@opentelemetry/instrumentation');
@@ -34,7 +35,11 @@ provider.register();
 
 registerInstrumentations({
     instrumentations: [
-        getNodeAutoInstrumentations(),
+        getNodeAutoInstrumentations({
+            '@opentelemetry/instrumentation-fs': {
+                enabled: false,
+              }
+        }),
         new ExpressInstrumentation(),
         new MongoDBInstrumentation({
             enhancedDatabaseReporting: true,
